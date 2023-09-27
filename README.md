@@ -1,3 +1,13 @@
+# fork  后修改部分
+修改 go mod 匹配 k8s 1.22.x 版本使用
+## 示例
+go run main.go 启动后
+
+可访问链接形如，修改参数即可
+
+http://127.0.0.1:8888/k8s-ws/terminal?namespace=default&pod=netshoot-deployment-ffd587845-sb2v2&container=netshoot
+![image](demo.png)
+
 # k8s-webshell-gin
 
 Golang实现登入k8s中指定pod内容器的Webshell功能，基于GIN框架、k8s/client-go，预留组内鉴权中间件。
@@ -17,7 +27,7 @@ Golang implements the webshell function of logging in k8s to specify pod content
 
 具体流程如下图所示:
 
-![image](https://github.com/GanonYou/k8s-webshell-gin/blob/master/k8s-webshell%20.jpg)
+![image](k8s-webshell%20.jpg)
 
 ## Quick Start
 1. Replace YOUR_K8S.conf with your own kubeconfig. If it is a yaml file, copy the contents into .conf file directly
@@ -32,4 +42,4 @@ Golang implements the webshell function of logging in k8s to specify pod content
 
 The specific process is shown in the following figure:
 
-![image](https://github.com/GanonYou/k8s-webshell-gin/blob/master/k8s-webshell%20.jpg)
+![image](k8s-webshell%20.jpg)
